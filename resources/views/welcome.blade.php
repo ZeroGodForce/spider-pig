@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Laravel {{ __('messages.main_title') }}
                 </div>
 
                 <div class="links">
