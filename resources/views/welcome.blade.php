@@ -55,6 +55,7 @@
 
     <div class="right-pane"></div>
 </section>
-
+<script src="{{ asset('js/konami.js') }}"></script>
+<script src="{{ asset('js/site.js') }}"></script>
 </body>
 </html>
