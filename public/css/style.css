@@ -1,0 +1,197 @@
+body {
+  line-height: 26px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  color: #363636;
+}
+
+body, p, h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* === DEFAULT STYLES (MOBILE FIRST) === */
+#hero-img img {
+  width: 100%;
+}
+
+.left-pane {
+  background-color: #fff;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  display: none;
+}
+
+.feature {
+  background-color: transparent;
+  padding: 25px 0px 25px 0px;
+  margin-top: -80px;
+  z-index: 15;
+  position: absolute;
+  width: 100%;
+}
+
+.feature .container .row {
+  background-color: #fff;
+}
+
+.feature-item {
+  padding-top: 15px;
+  position: relative;
+}
+
+.feature-item h1.main-title {
+  font-size: 20px;
+  color: #0068bf;
+  font-family: Georgia, sans-serif;
+  font-style: italic;
+  line-height: 22px;
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+
+.feature-item .section-img {
+  width: 100%;
+}
+
+.feature-item h2.section-title {
+  padding-right: 10px;
+  color: #363636;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  font-weight: bolder;
+}
+
+.feature-item p {
+  padding-top: 20px;
+  font-size: 14px;
+  line-height: 26px;
+  color: #363636;
+  font-family: Arial, sans-serif;
+}
+
+.right-pane {
+  background-color: #fff;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  z-index: 5;
+  display: none;
+}
+
+/* === SCREENS STARTING AT 576px === */
+@media (min-width: 576px) {
+  .left-pane {
+    margin-top: -30px;
+    display: block;
+  }
+
+  .feature {
+    margin-top: -90px;
+  }
+
+
+  .feature-item {
+    padding: 35px;
+  }
+
+  .feature-item:first-child {
+    padding-bottom: 0;
+  }
+
+
+  .right-pane {
+    width: 16%;
+    margin-top: -110px;
+    display: block;
+  }
+}
+
+/* === SCREENS STARTING AT 768px === */
+@media (min-width: 768px) {
+  .feature {
+    margin-top: -120px;
+  }
+
+  .right-pane {
+    margin-top: -140px;
+  }
+}
+
+/* === SCREENS STARTING AT 992px === */
+@media (min-width: 992px) {
+  .feature {
+    margin-top: -160px;
+    padding: 45px 0px;
+  }
+
+  .feature-item h1.main-title {
+    font-size: 28px;
+    line-height: 36px;
+    padding-bottom: 10px;
+    padding-top: 0;
+  }
+
+  .feature-item h2.section-title {
+    padding-right: 10px;
+    color: #363636;
+    font-size: 40px;
+    font-family: Arial, sans-serif;
+    font-weight: bolder;
+  }
+
+  .feature-item p {
+    font-size: 14px;
+    line-height: 26px;
+    color: #363636;
+    font-family: Arial, sans-serif;
+  }
+
+  .right-pane {
+    margin-top: -180px;
+  }
+}
+
+/* === SCREENS STARTING AT 1200px === */
+@media (min-width: 1200px) {
+  .left-pane {
+    margin-top: -70px;
+  }
+
+  .feature {
+    margin-top: -220px;
+  }
+
+  .right-pane {
+    margin-top: -240px;
+  }
+}
+
+/* === SCREENS STARTING AT 1440px === */
+@media (min-width: 1440px) {
+  .feature {
+    margin-top: -240px;
+  }
+
+  .right-pane {
+    margin-top: -260px;
+  }
+}
+
+/* === SCREENS STARTING AT 1660px === */
+@media (min-width: 1660px) {
+  .right-pane {
+    width: 20%;
+    margin-top: -300px;
+  }
+}
+
+/* === SCREENS STARTING AT 1920px === */
+@media (min-width: 1920px) {
+  .right-pane {
+    width: 30%;
+  }
+}
