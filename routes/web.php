@@ -13,5 +13,6 @@
 
 Auth::routes();
 
-Route::get('/{locale?}', 'WelcomeController@index')->name('welcome');
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/egg', 'EggController@index')->name('egg');
+Route::get('/{locale?}', 'WelcomeController@index')->name('welcome');
